@@ -1,4 +1,4 @@
-# Lexer
+### Lexer
 - LexerException - сообщения
 - LexerLang - лексер
 - StateOfSearchTerminal - поиск терминалов
@@ -6,12 +6,12 @@
 - Token - представление токенов
 
 
-# Parser
+### Parser
 - Nonterminal - экземпляр нетерминала
 - ParserException - сообщения
 - ParserLang -  парсер
 - ReportParser - отчеты об ошибках
 
-# UnitTest
+### UnitTest
 - LexerUnitTest - тест лексера 
 - ParserUnitTest - тест парсера
