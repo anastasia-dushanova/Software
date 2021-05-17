@@ -1,0 +1,36 @@
+Терминалы
+ASSIGN_OP → "^=$"
+VAR → "^[a-zA-Z][a-zA-Z0-9]*$"
+OP → "^ + | - | * | /$"
+DIGIT → "^ 0 | ([1-9]{1}[0-9]*)$"
+L_B → "^($"
+R_B → "^)$"
+WHILE_KW → "^while$"
+DO_KW → "^do$"
+PRINT_KW → "^print$"
+LOGICAL_OP → "^>|<|>=|<=|==$"
+COMMA → "^;$"
+COM → "^,$"
+IF_KW → "^if$"
+ELSE_KW → "^else$"
+FOR_KW → "^for$"
+L_QB → "^{$"
+R_QB → "^}$"
+
+Нетерминалы
+lang → expr*
+expr → assing_expr | cycle_expr | if_expr_OR_ifelse_expr | PRINT_KW | 
+assign_expr → VAR ASSIGN_OP b_val_expr
+b_val_expr → stmt | (L_B stmt R_B)
+stmt → value (OP value)* 
+value → VAR | DIGIT | b_val_expr
+cycle_expr → while_expr | for_expr | do_while_expr
+while_expr → WHILE_KW condition body
+do_while_expr → DO_KW body WHILE_KW condition
+condition → value LOGICAL_OP value
+body → L_QB lang R_QB
+for_expr → FOR_KW L_B assign_expr COMMA for_condition COMMA assign_expr R_B body
+for_condition → value LOGICAL_OP value
+if_expr_OR_ifelse_expr → ifelse_expr | if_expr
+ifelse_expr→ IF_KW condition body ELSE_KW body
+if_expr → IF_KW condition body
