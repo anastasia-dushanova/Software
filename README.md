@@ -1,17 +1,10 @@
-### Lexer
-- LexerException - сообщения
-- LexerLang - лексер
-- StateOfSearchTerminal - поиск терминалов
-- Terminal - представление терминалов
-- Token - представление токенов
+### MyTypes
+- LinkedList
+- HashSet
+- Дерево
 
-
-### Parser
-- Nonterminal - экземпляр нетерминала
-- ParserException - сообщения
-- ParserLang -  парсер
-- ReportParser - отчеты об ошибках
-
-### UnitTest
-- LexerUnitTest - тест лексера 
-- ParserUnitTest - тест парсера
+### Инструкция
+- скачать StackMachine.exe, Lexer.exe, Parser.exe и LangExample.txt с MyTypes.dll
+- открыть StackMachine.exe
+- перенести LangExample.txt в окно консоли и нажать ENTER
+- если в конце появиться "test =1 Press any key ...", значит все верно
