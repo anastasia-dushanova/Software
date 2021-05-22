@@ -1,7 +1,0 @@
-C:\Users\Пользователь\Desktop\System-software-6-semester-1\Lexer\bin\Debug\Lexer.exe.config
-C:\Users\Пользователь\Desktop\System-software-6-semester-1\Lexer\bin\Debug\Lexer.exe
-C:\Users\Пользователь\Desktop\System-software-6-semester-1\Lexer\bin\Debug\Lexer.pdb
-C:\Users\Пользователь\Desktop\System-software-6-semester-1\Lexer\obj\Debug\Lexer.csprojAssemblyReference.cache
-C:\Users\Пользователь\Desktop\System-software-6-semester-1\Lexer\obj\Debug\Lexer.csproj.CoreCompileInputs.cache
-C:\Users\Пользователь\Desktop\System-software-6-semester-1\Lexer\obj\Debug\Lexer.exe
-C:\Users\Пользователь\Desktop\System-software-6-semester-1\Lexer\obj\Debug\Lexer.pdb
