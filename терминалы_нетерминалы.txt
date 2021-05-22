@@ -16,6 +16,19 @@ ELSE_KW → "^else$"
 FOR_KW → "^for$"
 L_QB → "^{$"
 R_QB → "^}$"
+HASHSET_ADD  → "^HASHSET_ADD$"
+HASHSET_CONTAINS → "^HASHSET_CONTAINS$"
+HASHSET_REMOVE → "^HASHSET_REMOVE  $"
+HASHSET_COUNT → "^HASHSET_ADD$"
+LIST_ADD → "^LIST_ADD$"
+LIST_CONTAINS → "^LIST_CONTAINS$"
+LIST_REMOVE → "^LIST_REMOVE  $"
+LIST_COUNT → "^LIST_ADD$"
+COMMENT → "^\\/\\/.+$"
+CH_SPACE → "^ $"
+CH_LEFTLINE → "^\n$"
+CH_NEWLINE → "^LIST_ADD$"
+CH_TAB → "^\t$"
 
 Нетерминалы
 lang → expr*
@@ -34,3 +47,5 @@ for_condition → value LOGICAL_OP value
 if_expr_OR_ifelse_expr → ifelse_expr | if_expr
 ifelse_expr→ IF_KW condition body ELSE_KW body
 if_expr → IF_KW condition body
+command_hash_expr → HASHSET_ADD value | HASHSET_CONTAINS value | HASHSET_REMOVE value | HASHSET_COUNT
+command_list_expr → LIST_ADD value | LIST_CONTAINS value | LIST_REMOVE value | LIST_COUNT
