@@ -50,7 +50,7 @@ namespace StackMachine
             Console.WriteLine(string.Join(", ", commands));
             Console.ForegroundColor = ConsoleColor.White;
             Lang.stackMachine.Execute(commands);
-            Console.Write("Press eny key...");
+            Console.Write("Press any key...");
             Console.ReadLine();
             return 0;
         }
